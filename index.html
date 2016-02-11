@@ -13,17 +13,120 @@
     <link href="/media/css/fontello.css" rel="stylesheet" />
     <link href="/media/css/meaghanandsam.css" rel="stylesheet" />
     <link href="/media/css/animate.css" rel="stylesheet" />
-    
+
     <link href="http://fonts.googleapis.com/css?family=Arvo:400,700" rel="stylesheet" type="text/css" />
     <link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css" />
     <link href="http://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css" />
 
     <style type="text/css">
-        .alignment { position: absolute; display: table; height: 100%; width: 100%; }
-        .v-align { display: table-cell; }
-        .center-middle { vertical-align: middle; text-align: center; }
-        .center-top { vertical-align: top; text-align: center; }
-        .center-bottom { vertical-align: bottom; text-align: center; }
+        .alignment {
+            position: absolute;
+            display: table;
+            height: 100%;
+            width: 100%;
+        }
+
+        .v-align {
+            display: table-cell;
+        }
+
+        .center-middle {
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        .center-top {
+            vertical-align: top;
+            text-align: center;
+        }
+
+        .center-bottom {
+            vertical-align: bottom;
+            text-align: center;
+        }
+
+        #accomodation {
+            padding: 120px 0;
+            position: relative;
+        }
+
+
+        .nav-flex {
+            padding: 10px 0;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Oswald', sans-serif;
+            font-size: 13px;
+            text-transform: uppercase;
+        }
+        .nav-flex.top-bar{
+                position: absolute;
+                margin: auto;
+    left: 0;
+    right: 0;
+        width: 100%;
+    z-index: 1000;
+        height: 80px;
+        }
+
+        .nav-flex-logo {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #f0394d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+        }
+
+        .nav-flex-name {
+            font-family: 'Oswald', sans-serif;
+            /*-webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);*/
+        }
+
+        .nav-flex-name-monogram{
+            color:#FFF;
+            font-size:14px;
+            
+        }
+
+
+        .nav-flex-item {
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 18px;
+        }
+
+
+            .nav-flex-item:before {
+                font-family: "fontello";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 10px;
+                content: '\e9bd';
+                color: #f0394d;
+                text-align: center;
+                padding-right: 5px;
+                padding-top: 3px;
+                position: relative;
+                left: -15px;
+            }
+
+            .nav-flex-item:hover {
+                color: #f0394d;
+            }
+
+        .nav-flex-item-hide-before:before {
+            content: "";
+            margin-left: 0;
+        }
     </style>
 </head>
 <body>
@@ -41,6 +144,23 @@
         </div>
     </div>
     <!-- END OF PRELOADER -->
+    <!-- NAVIGATION -->
+    <header id="nav-header" class="hidden-xs">
+        <div class="nav-flex top-bar animation fadeInDown animated">
+            <a class="nav-flex-item nav-flex-item-hide-before" href="#">Home</a>
+            <a class="nav-flex-item" href="#">Party</a>
+            <div class="nav-flex-logo nav-flex-name">
+                <span class="nav-flex-name-monogram">M</span>
+                <span class="nav-flex-name-monogram" style="font-size:24px;padding: 0 2px;">C</span>
+                <span class="nav-flex-name-monogram">S</span>
+            </div>
+            <a class="nav-flex-item nav-flex-item-hide-before" href="#">Sleep</a>
+            <a class="nav-flex-item" href="#">Registry</a>
+        </div>
+    </header>
+    
+    <!-- END OF NAVIGATION -->
+    <!-- MAIN SLIDER -->
     <section id="main-slider" class="flexslider fullscreen" style="height: 939px;">
         <!-- MAIN SLIDER TITLE OUTTER WRAPPER -->
         <div class="slide-title-outter-wrapper">
@@ -71,62 +191,149 @@
                 </div>
             </div><!-- END of MAIN SLIDER TITLE INNER WRAPPER -->
         </div> <!-- END of MAIN SLIDER TITLE OUTTER WRAPPER -->
-        
-    </section>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-offset-2 col-md-8">
-                <div class="page-title animation text-center fadeInUp animated">
-                    <h1 style="text-transform:uppercase;">Gift Registry</h1>
-                    <div class="heart-divider">
-                        <span class="grey-line"></span>
-                        <i class="de-icon-heart pink-heart"></i>
-                        <i class="de-icon-heart grey-heart"></i>
-                        <span class="grey-line"></span>
+    </section>
+    <!-- END OF MAIN SLIDER -->
+    <!-- CONTENT SECTION-->
+    <section id="content">
+        <section id="location-countdown">
+            <div class="image-divider auto-height" style="background-image: url(/media/img/canfield_casino.jpg); background-attachment: fixed; background-position: 50% 50%" data-stellar-background-ratio="0.5">
+                <div class="divider-overlay"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-offset-1 col-md-10 text-center">
+
+                            <div class="banner-text light medium animation fadeInUp animated" style="letter-spacing: 3px; ">
+                                <h4 style="text-transform:uppercase;">*** At Canfield Casino, Saratoga Springs, NY 12866 ***</h4>
+                            </div>
+
+                            <div class="animation fadeInUp animated" style="visibility: visible;">
+                                <div id="counting-down">
+                                    <div id="counting">Counting</div>
+                                    <div id="down">Down</div>
+                                </div>
+                            </div>
+
+                            <div class="heart-divider animation fadeInUp animated" style="visibility: visible;">
+                                <span class="white-line"></span>
+                                <i class="de-icon-heart pink-heart"></i>
+                                <i class="de-icon-heart white-heart"></i>
+                                <span class="white-line"></span>
+                            </div>
+
+                            <div id="countdown" class="simple-countdown animation fadeInUp is-countdown animated">
+                                <span style="font-size:20px;display:block;">Sunday, June 26, 2016 - 5:30 PM</span>
+
+                            </div>
+                        </div>
                     </div>
-                    <h3>Here's a few stores we registered with</h3>
+                </div>
+
+            </div>
+        </section>
+        <section id="accomodation">
+            <div class="icon-title">
+                <div class="de-icon circle light large-size aligncenter" style="background-color:#f6f6f6">
+                    <i class="de-icon-home"></i>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                <img src="media/img/amazon.png" class="img-responsive"  />
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                <img src="media/img/bed-bath-and-beyond.png" class="img-responsive" />
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                <img src="media/img/crate-and-barrel.png" class="img-responsive" />
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                <img src="media/img/pottery-barn.png" class="img-responsive" />
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                <img src="media/img/target.png" class="img-responsive" />
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                <img src="media/img/williams-sonoma.png" class="img-responsive" />
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                <img src="media/img/rei.png" class="img-responsive" />
-            </div>
-        </div>
-        <div class="row" style="padding-top:70px">
-            <div class="col-md-offset-2 col-md-8 text-center animation fadeIn animated">
-                <h3>Thank you for the gift! We really appreciate it!</h3>
-                <p class="blurb">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices malesuada ante quis pharetra. Nullam non bibendum dolor. Ut vel turpis accumsan, efficitur dolor fermentum, tincidunt metus. Etiam ut ultrices nibh.  Etiam aliquam mauris non hendrerit faucibus. Proin pulvinar congue  ex, vitae commodo. Phasellus condimentum, mi ut sodales gravida.
-                </p>
-                <div class="heart-divider">
-                    <span class="grey-line"></span>
-                    <i class="de-icon-heart pink-heart"></i>
-                    <i class="de-icon-heart grey-heart"></i>
-                    <span class="grey-line"></span>
+            <div class="container">
+                <div class="row animation fadeIn animated" style="padding-bottom: 60px;">
+                    <div class="col-md-offset-2 col-md-8">
+                        <div class="page-title animation text-center fadeInUp animated">
+                            <h1 style="text-transform:uppercase;">Accomodations</h1>
+                            <div class="heart-divider">
+                                <span class="white-line"></span>
+                                <i class="de-icon-heart pink-heart"></i>
+                                <i class="de-icon-heart white-heart"></i>
+                                <span class="white-line"></span>
+                            </div>
+                            <p>
+                                We've got some deals for you! We have worked out a block of rooms from the following hotels below. If you are interested in speciality hotels, keep on scrolling down.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row animation fadeIn animated" style="padding-bottom: 60px; visibility: visible;">
+                    <div class="col-md-offset-1 col-md-5 no-padding">
+                        <div style="background-color:#FFF; padding:46px">
+                            <h3>Pavilion Grand Hotel <span class="label label-default pull-right" style="font-weight:300;">$160 <span style="font-size:20px;">+</span></span></h3>
+                            <span>30 Lake Avenue, Saratoga Springs, NY 12866<br><br></span>
+                            <p>A luxury boutique hotel with all suite-style rooms located in the heart of Saratoga Springs, just one block off Broadway. Suites ranging from 660 - 2300 square feet include full kitchens and some include outdoor patios!</p>
+                            <p>Rooms available in the block on Saturday (6/25) and Sunday (6/26) nights.</p>
+                            <div class="booking">
+                                <div class="bookit" style="font-weight:bold;">To Book</div>
+                                <a href="tel:518-583-2727" class="de-button small" style="margin-top:0;"><i class="de-icon-phone"></i> Call (518) 583-2727</a>
+                            </div>
+
+                            <a href="https://goo.gl/maps/qhUrcTwDpwq" class="de-button small" target="_blank"><i class="de-icon-location"></i> Map</a>
+                            <a href="https://goo.gl/maps/qhUrcTwDpwq" class="de-button small" target="_blank"><i class="de-icon-location"></i> 9 min walk to party!</a>
+                        </div>
+                    </div>
+                    <div class="col-md-5 no-padding">
+                        <img src="/media/img/pavilion-grand-hotel-a.jpg" class="fullwidth" alt="Pavilion Grand Hotel, Saratoga Springs, NY">
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+        <section id="gift-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-offset-2 col-md-8">
+                        <div class="page-title animation text-center fadeInUp animated">
+                            <h1 style="text-transform:uppercase;">Registry</h1>
+                            <div class="heart-divider">
+                                <span class="grey-line"></span>
+                                <i class="de-icon-heart pink-heart"></i>
+                                <i class="de-icon-heart grey-heart"></i>
+                                <span class="grey-line"></span>
+                            </div>
+                            <h3>Here's a few stores we registered with</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                        <img src="media/img/amazon.png" class="img-responsive" />
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                        <img src="media/img/bed-bath-and-beyond.png" class="img-responsive" />
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                        <img src="media/img/crate-and-barrel.png" class="img-responsive" />
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                        <img src="media/img/pottery-barn.png" class="img-responsive" />
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                        <img src="media/img/target.png" class="img-responsive" />
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                        <img src="media/img/williams-sonoma.png" class="img-responsive" />
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                        <img src="media/img/rei.png" class="img-responsive" />
+                    </div>
+                </div>
+                <div class="row" style="padding-top:70px">
+                    <div class="col-md-offset-2 col-md-8 text-center animation fadeIn animated">
+                        <h3>Thank you for the gift! We really appreciate it!</h3>
+                        <p class="blurb">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices malesuada ante quis pharetra. Nullam non bibendum dolor. Ut vel turpis accumsan, efficitur dolor fermentum, tincidunt metus. Etiam ut ultrices nibh.  Etiam aliquam mauris non hendrerit faucibus. Proin pulvinar congue  ex, vitae commodo. Phasellus condimentum, mi ut sodales gravida.
+                        </p>
+                        <div class="heart-divider">
+                            <span class="grey-line"></span>
+                            <i class="de-icon-heart pink-heart"></i>
+                            <i class="de-icon-heart grey-heart"></i>
+                            <span class="grey-line"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- END OF CONTENT SECTION-->
+    <!-- FOOTER -->
     <footer>
         <div class="image-divider fixed-height" style="background-image: url(media/img/sonoma.jpg); background-attachment: fixed;">
             <div class="divider-overlay"></div>
@@ -158,6 +365,7 @@
             </div>
         </div>
     </footer>
+    <!-- END OF FOOTER -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
 </body>
