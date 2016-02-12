@@ -7,131 +7,100 @@
     <meta name="author" content="Sam Creydt">
     <meta name="ROBOTS" content="NOINDEX">
     <title>Meaghan and Sam - June 26, 2016</title>
+    
+    <!-- Fav Icon -->
     <link rel="icon" href="/media/img/favicon.jpg" />
+    
+    <!-- Bootstrap -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
+    
+    <!-- Pace -->
     <link href="/media/css/preloader.min.css" rel="stylesheet" />
-    <link href="/media/css/fontello.css" rel="stylesheet" />
-    <link href="/media/css/meaghanandsam.css" rel="stylesheet" />
-    <link href="/media/css/animate.css" rel="stylesheet" />
+    <link href="/media/css/preloader-default.min.css" rel="stylesheet" />
 
+    <!-- Flexslider -->
+    <link href="/media/css/flexslider.css" rel="stylesheet" />
+
+    <!-- Animate -->
+    <link href="/media/css/animate.css" rel="stylesheet" />
+    
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="/media/js/owl-carousel/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="/media/js/owl-carousel/owl.theme.css" type="text/css">
+
+    <!-- Icon -->
+    <link href="/media/css/fontello.css" rel="stylesheet" />
+    
+    <!-- Font -->
     <link href="http://fonts.googleapis.com/css?family=Arvo:400,700" rel="stylesheet" type="text/css" />
     <link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css" />
     <link href="http://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Clicker+Script" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="/media/css/meaghanandsam.css" rel="stylesheet" />
 
     <style type="text/css">
-        .alignment {
-            position: absolute;
-            display: table;
-            height: 100%;
-            width: 100%;
+        .alignment { position: absolute; display: table; height: 100%; width: 100%; }
+
+        .v-align { display: table-cell; }
+
+        .center-middle { vertical-align: middle; text-align: center; }
+
+        .center-top { vertical-align: top; text-align: center; }
+
+        .center-bottom { vertical-align: bottom; text-align: center; }
+
+        #accomodation { padding: 120px 0; position: relative; }
+
+
+        .nav-flex { padding: 10px 0; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: center; align-items: center; font-family: 'Oswald', sans-serif; font-size: 13px; text-transform: uppercase; }
+            .nav-flex.top-bar { position: absolute; margin: auto; left: 0; right: 0; width: 100%; z-index: 1000; height: 80px; }
+
+        .nav-flex-logo { width: 60px; height: 60px; border-radius: 50%; background-color: #f0394d; display: flex; justify-content: center; align-items: center; }
+
+        .nav-flex-name { font-family: 'Oswald', sans-serif; /*-webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);*/ }
+
+        .nav-flex-name-monogram { color: #FFF; font-size: 14px; }
+
+
+        .nav-flex-item { height: 60px; display: flex; justify-content: center; align-items: center; padding: 0 18px; }
+
+
+            .nav-flex-item:before { font-family: "fontello"; font-style: normal; font-weight: normal; font-size: 10px; content: '\e9bd'; color: #f0394d; text-align: center; padding-right: 5px; padding-top: 3px; position: relative; left: -15px; }
+
+            .nav-flex-item:hover { color: #f0394d; }
+
+        .nav-flex-item-hide-before:before { content: ""; margin-left: 0; }
+
+        .countdown_row { clear: both; width: 100%; display:flex; flex-direction: row;justify-content: center; align-content:center; height:150px; padding: 0px; text-align: center;  }
+        .countdown_section { display: block; text-align: center; width: 148px; height: 170px; padding: 10px 0 0 0; margin: 0 12px; background: url(/media/img/countdown_frame.png) no-repeat center; text-align: center; font-size: 36px; color: #FFFFFF; text-transform: lowercase; font-family: 'Clicker Script', cursive;      }
+        span.countdown_amount { font-size: 80px; color: #FFFFFF; font-weight: 700; letter-spacing: -0.5px; font-family: 'Open Sans', sans-serif;}
+        
+        /* hotels */
+        .hotel-column{}
+        .hotel-name { margin-top: 0; margin-bottom: 5px; font-size: 20px; font-family: 'Oswald', sans-serif; color: #333333; text-decoration:none; }
+        .hotel-price { font-weight: 300; font-family: 'Oswald', sans-serif; }
+        .hotel-location { display: block; margin-bottom: 10px; }
+            .hotel-location:hover, .hotel-name:hover { color: #f0394d; text-decoration:underline; }
+        .hotel-body { background-color: #FFF; padding: 30px 30px 30px 30px; }
+            .hotel-body .de-button { margin-top: 0; }
+        .hotel-footer { background-color: #FFF; border-top:1px solid #f6f6f6; padding: 30px 30px; }
+        .hotel-book-label { font-weight: bold; text-transform: uppercase; font-family: 'Oswald', sans-serif;margin-bottom:8px; }
+
+        @media screen and (max-width: 680px) {
+            .countdown_row { height: 70px; }
+            .countdown_section { background: url(/media/img/countdown_frame_small.png) no-repeat center; font-size: 22px; width: 50px; height: 70px; padding: 10px 0 0 0; margin: 0 5px; }
+            span.countdown_amount { font-size: 22px; }
         }
 
-        .v-align {
-            display: table-cell;
-        }
-
-        .center-middle {
-            vertical-align: middle;
-            text-align: center;
-        }
-
-        .center-top {
-            vertical-align: top;
-            text-align: center;
-        }
-
-        .center-bottom {
-            vertical-align: bottom;
-            text-align: center;
-        }
-
-        #accomodation {
-            padding: 120px 0;
-            position: relative;
-        }
-
-
-        .nav-flex {
-            padding: 10px 0;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: center;
-            align-items: center;
-            font-family: 'Oswald', sans-serif;
-            font-size: 13px;
-            text-transform: uppercase;
-        }
-        .nav-flex.top-bar{
-                position: absolute;
-                margin: auto;
-    left: 0;
-    right: 0;
-        width: 100%;
-    z-index: 1000;
-        height: 80px;
-        }
-
-        .nav-flex-logo {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            background-color: #f0394d;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-           
-        }
-
-        .nav-flex-name {
-            font-family: 'Oswald', sans-serif;
-            /*-webkit-transform: rotate(-10deg);
-            transform: rotate(-10deg);*/
-        }
-
-        .nav-flex-name-monogram{
-            color:#FFF;
-            font-size:14px;
-            
-        }
-
-
-        .nav-flex-item {
-            height: 60px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 0 18px;
-        }
-
-
-            .nav-flex-item:before {
-                font-family: "fontello";
-                font-style: normal;
-                font-weight: normal;
-                font-size: 10px;
-                content: '\e9bd';
-                color: #f0394d;
-                text-align: center;
-                padding-right: 5px;
-                padding-top: 3px;
-                position: relative;
-                left: -15px;
-            }
-
-            .nav-flex-item:hover {
-                color: #f0394d;
-            }
-
-        .nav-flex-item-hide-before:before {
-            content: "";
-            margin-left: 0;
-        }
     </style>
 </head>
 <body>
     <!--PRELOADER-->
-    <div id="preloader" style="display:none;">
+    <div id="preloader">
         <div class="alignment">
             <div class="v-align center-middle">
                 <div class="heart-animation">
@@ -146,7 +115,7 @@
     <!-- END OF PRELOADER -->
     <!-- NAVIGATION -->
     <header id="nav-header" class="hidden-xs">
-        <div class="nav-flex top-bar animation fadeInDown animated">
+        <div id="nav-bar" class="nav-flex top-bar transparent animation sticky-nav fadeInDown">
             <a class="nav-flex-item nav-flex-item-hide-before" href="#">Home</a>
             <a class="nav-flex-item" href="#">Party</a>
             <div class="nav-flex-logo nav-flex-name">
@@ -158,32 +127,32 @@
             <a class="nav-flex-item" href="#">Registry</a>
         </div>
     </header>
-    
+
     <!-- END OF NAVIGATION -->
     <!-- MAIN SLIDER -->
-    <section id="main-slider" class="flexslider fullscreen" style="height: 939px;">
+    <section id="main-slider" class="flexslider fullscreen">
         <!-- MAIN SLIDER TITLE OUTTER WRAPPER -->
         <div class="slide-title-outter-wrapper">
             <!-- MAIN SLIDER TITLE INNER WRAPPER -->
             <div class="slide-title-inner-wrapper">
                 <!-- TITLE -->
-                <div class="slide-title align-middle" style="color:#333;">
+                <div class="slide-title align-middle">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-offset-3 col-md-6 animation delay1 fadeInUp animated">
+                            <div class="col-md-offset-3 col-md-6 animation delay1 fadeInUp ">
                                 <div id="save-the-date">
                                     <div id="save">Save</div>
                                     <div id="the-date">the Date</div>
                                     <div id="date">- 06<span class="pink-dot">.</span>26<span class="pink-dot">.</span>16 -</div>
                                 </div>
-                                <div class="banner-text light medium" style="letter-spacing:3px;color:#333;border-top:medium double #ccc;border-bottom:medium double #ccc;">
-                                    <h4 style="color:#333;">*** WE ARE GETTING MARRIED ***</h4>
+                                <div class="banner-text light medium" style="letter-spacing:3px;color:#FFF;border-top:medium double #ccc;border-bottom:medium double #ccc;">
+                                    <h4 style="color:#FFF;">*** WE ARE GETTING MARRIED ***</h4>
                                 </div>
                                 <div class="heart-divider" style="margin:0">
-                                    <span class="white-line" style="width:10px;border-top-color:#333;"></span>
+                                    <span class="white-line" style="width:10px;border-top-color:#FFF;"></span>
                                     <i class="de-icon-heart pink-heart"></i>
                                     <i class="de-icon-heart grey-heart"></i>
-                                    <span class="white-line" style="width:10px;border-top-color:#333;"></span>
+                                    <span class="white-line" style="width:10px;border-top-color:#FFF;"></span>
                                 </div>
                             </div>
                         </div>
@@ -191,39 +160,72 @@
                 </div>
             </div><!-- END of MAIN SLIDER TITLE INNER WRAPPER -->
         </div> <!-- END of MAIN SLIDER TITLE OUTTER WRAPPER -->
-
+        <!-- MAIN SLIDER IMAGES -->
+        <ul class="slides">
+            <li>
+                <div data-stellar-ratio="0.5" class="slide-image" style="background-image:url('/media/img/Sonoma.jpg')"></div>
+                <div class="slide-overlay" style="opacity:0.2;"></div>
+            </li>
+            <li>
+                <div data-stellar-ratio="0.5" class="slide-image" style="background-image:url('/media/img/Dancing.jpg')"></div>
+                <div class="slide-overlay" style="opacity:0.2;"></div>
+            </li>
+            <li>
+                <div data-stellar-ratio="0.5" class="slide-image" style="background-image:url('/media/img/the_proposal.jpg')"></div>
+                <div class="slide-overlay" style="opacity:0.2;"></div>
+            </li>
+            <li>
+                <div data-stellar-ratio="0.5" class="slide-image" style="background-image:url('/media/img/Climb.jpg')"></div>
+                <div class="slide-overlay" style="opacity:0.2;"></div>
+            </li>
+        </ul>
     </section>
     <!-- END OF MAIN SLIDER -->
     <!-- CONTENT SECTION-->
     <section id="content">
         <section id="location-countdown">
-            <div class="image-divider auto-height" style="background-image: url(/media/img/canfield_casino.jpg); background-attachment: fixed; background-position: 50% 50%" data-stellar-background-ratio="0.5">
+            <div class="image-divider auto-height" style="background-image: url(/media/img/canfield.jpg); background-attachment: fixed; background-position: 50% 50%">
                 <div class="divider-overlay"></div>
                 <div class="container">
                     <div class="row">
                         <div class="col-md-offset-1 col-md-10 text-center">
-
-                            <div class="banner-text light medium animation fadeInUp animated" style="letter-spacing: 3px; ">
+                            <div class="banner-text light medium animation fadeInUp " style="letter-spacing: 3px; ">
                                 <h4 style="text-transform:uppercase;">*** At Canfield Casino, Saratoga Springs, NY 12866 ***</h4>
                             </div>
 
-                            <div class="animation fadeInUp animated" style="visibility: visible;">
+                            <div class="animation fadeInUp " style="visibility: visible;">
                                 <div id="counting-down">
                                     <div id="counting">Counting</div>
                                     <div id="down">Down</div>
                                 </div>
                             </div>
 
-                            <div class="heart-divider animation fadeInUp animated" style="visibility: visible;">
+                            <div class="heart-divider animation fadeInUp " style="visibility: visible;">
                                 <span class="white-line"></span>
                                 <i class="de-icon-heart pink-heart"></i>
                                 <i class="de-icon-heart white-heart"></i>
                                 <span class="white-line"></span>
                             </div>
 
-                            <div id="countdown" class="simple-countdown animation fadeInUp is-countdown animated">
-                                <span style="font-size:20px;display:block;">Sunday, June 26, 2016 - 5:30 PM</span>
-
+                            <div id="countdown" class="animation fadeInUp ">
+                                <span class="countdown_row">
+                                    <span class="countdown_section" id="countdown-year">
+                                        <span class="countdown_amount">1</span>
+                                        <br>
+                                        Year
+                                    </span>
+                                    <span class="countdown_section">
+                                        <span class="countdown_amount">1</span>
+                                        <br>
+                                        Month
+                                    </span>
+                                    <span class="countdown_section">
+                                        <span class="countdown_amount">1</span>
+                                        <br>
+                                        Days
+                                    </span>
+                                    <span class="countdown_section"></span>
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -238,9 +240,9 @@
                 </div>
             </div>
             <div class="container">
-                <div class="row animation fadeIn animated" style="padding-bottom: 60px;">
+                <div class="row animation fadeIn">
                     <div class="col-md-offset-2 col-md-8">
-                        <div class="page-title animation text-center fadeInUp animated">
+                        <div class="page-title animation text-center fadeInUp">
                             <h1 style="text-transform:uppercase;">Accomodations</h1>
                             <div class="heart-divider">
                                 <span class="white-line"></span>
@@ -249,29 +251,34 @@
                                 <span class="white-line"></span>
                             </div>
                             <p>
-                                We've got some deals for you! We have worked out a block of rooms from the following hotels below. If you are interested in speciality hotels, keep on scrolling down.
+                                We've done our best to get very best rooms at a discount! We have worked out a block of rooms from the following hotels below. If you are interested in speciality hotels, keep on scrolling down.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="row animation fadeIn animated" style="padding-bottom: 60px; visibility: visible;">
-                    <div class="col-md-offset-1 col-md-5 no-padding">
-                        <div style="background-color:#FFF; padding:46px">
-                            <h3>Pavilion Grand Hotel <span class="label label-default pull-right" style="font-weight:300;">$160 <span style="font-size:20px;">+</span></span></h3>
-                            <span>30 Lake Avenue, Saratoga Springs, NY 12866<br><br></span>
+                <div class="row animation fadeInUp">
+                    <div class="col-md-6 hotel-column" style="padding-bottom:60px;">
+                        <div class="owl-carousel owl-theme owl-hotel">
+                            <div class="item"><img data-src="/media/img/pavilion-grand-hotel/pavilion-grand-hotel-a.jpg" class="lazyOwl fullwidth" alt="Pavilion Grand Hotel, Saratoga Springs, NY"></div>
+                            <div class="item"><img data-src="/media/img/pavilion-grand-hotel/terrace.jpg" class="lazyOwl fullwidth" alt="Pavilion Grand Hotel, Saratoga Springs, NY"></div>
+                        </div>
+                        <div class="hotel-body">
+                            <a class="hotel-name" href="http://www.paviliongrandhotel.com/" target="_blank">Pavilion Grand Hotel <span class="label label-default pull-right hotel-price">$160</span></a>
+                            <a class="hotel-location" href="https://goo.gl/maps/CFZ7cWAMbnE2" target="_blank">30 Lake Avenue, Saratoga Springs, NY 12866</a>
                             <p>A luxury boutique hotel with all suite-style rooms located in the heart of Saratoga Springs, just one block off Broadway. Suites ranging from 660 - 2300 square feet include full kitchens and some include outdoor patios!</p>
                             <p>Rooms available in the block on Saturday (6/25) and Sunday (6/26) nights.</p>
-                            <div class="booking">
-                                <div class="bookit" style="font-weight:bold;">To Book</div>
-                                <a href="tel:518-583-2727" class="de-button small" style="margin-top:0;"><i class="de-icon-phone"></i> Call (518) 583-2727</a>
-                            </div>
-
-                            <a href="https://goo.gl/maps/qhUrcTwDpwq" class="de-button small" target="_blank"><i class="de-icon-location"></i> Map</a>
-                            <a href="https://goo.gl/maps/qhUrcTwDpwq" class="de-button small" target="_blank"><i class="de-icon-location"></i> 9 min walk to party!</a>
+                            <a href="https://goo.gl/maps/CFZ7cWAMbnE2" class="de-button small" target="_blank"><i class="de-icon-location"></i>View Map</a>
+                            <a href="https://goo.gl/maps/qhUrcTwDpwq" class="de-button small" target="_blank"><svg style="width:16px;height:16px;position: relative;top: 2px;" viewBox="0 0 24 24"><path fill="#6a6a6a" d="M14.12,10H19V8.2H15.38L13.38,4.87C13.08,4.37 12.54,4.03 11.92,4.03C11.74,4.03 11.58,4.06 11.42,4.11L6,5.8V11H7.8V7.33L9.91,6.67L6,22H7.8L10.67,13.89L13,17V22H14.8V15.59L12.31,11.05L13.04,8.18M14,3.8C15,3.8 15.8,3 15.8,2C15.8,1 15,0.2 14,0.2C13,0.2 12.2,1 12.2,2C12.2,3 13,3.8 14,3.8Z" /></svg> 9 min walk to party!</a>
+                        </div>
+                        <div class="hotel-footer">
+                            <div class="hotel-book-label">To Book</div>
+                            <a href="tel:518-583-2727" class="de-button small" style="margin-top:0;"><i class="de-icon-phone"></i>Call (518) 583-2727</a> code "<span style="color:#f0394d;">Dooley/Creydt Wedding</span>"
                         </div>
                     </div>
-                    <div class="col-md-5 no-padding">
-                        <img src="/media/img/pavilion-grand-hotel-a.jpg" class="fullwidth" alt="Pavilion Grand Hotel, Saratoga Springs, NY">
+                    <div class="col-md-6" style="padding-bottom:60px;">
+                        <div style="background-color:#FFF; padding:46px;">
+                            <h3 style="margin-top:0;">Embassy Suites Saratoga <span class="label label-default pull-right" style="font-weight:300;">$159 <span style="font-size:20px;"></span></span></h3>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -280,7 +287,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-offset-2 col-md-8">
-                        <div class="page-title animation text-center fadeInUp animated">
+                        <div class="page-title animation text-center fadeInUp ">
                             <h1 style="text-transform:uppercase;">Registry</h1>
                             <div class="heart-divider">
                                 <span class="grey-line"></span>
@@ -292,7 +299,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row animation fadeInUp">
                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
                         <img src="media/img/amazon.png" class="img-responsive" />
                     </div>
@@ -316,7 +323,7 @@
                     </div>
                 </div>
                 <div class="row" style="padding-top:70px">
-                    <div class="col-md-offset-2 col-md-8 text-center animation fadeIn animated">
+                    <div class="col-md-offset-2 col-md-8 text-center animation fadeIn ">
                         <h3>Thank you for the gift! We really appreciate it!</h3>
                         <p class="blurb">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices malesuada ante quis pharetra. Nullam non bibendum dolor. Ut vel turpis accumsan, efficitur dolor fermentum, tincidunt metus. Etiam ut ultrices nibh.  Etiam aliquam mauris non hendrerit faucibus. Proin pulvinar congue  ex, vitae commodo. Phasellus condimentum, mi ut sodales gravida.
@@ -343,19 +350,19 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="animation fadeInUp animated">
+                                <div class="animation fadeInUp ">
                                     <div id="thank-you">
                                         <div id="thank">Thank</div>
                                         <div id="you">You</div>
                                     </div>
                                 </div>
-                                <div class="heart-divider animation delay1 fadeInUp animated">
+                                <div class="heart-divider animation delay1 fadeInUp ">
                                     <span class="white-line"></span>
                                     <i class="de-icon-heart pink-heart"></i>
                                     <i class="de-icon-heart white-heart"></i>
                                     <span class="white-line"></span>
                                 </div>
-                                <div id="footer-couple-name" class="animation delay1 fadeInUp animated">
+                                <div id="footer-couple-name" class="animation delay1 fadeInUp ">
                                     Meaghan &amp; Sam
                                 </div>
                             </div>
@@ -366,7 +373,43 @@
         </div>
     </footer>
     <!-- END OF FOOTER -->
+    
+    
+    <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    
+    <!-- Pace -->
+    <script src="/media/js/pace/pace.min.js"></script>
+
+    <!-- Bootstrap -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
+    
+    <!-- Modernizr -->
+    <script src="/media/js/modernizr/modernizr.js"></script>
+
+    <!-- Device JS -->
+    <script src="/media/js/devicejs/device.js"></script>  
+
+    <!-- SmoothScroll -->
+    <script src="/media/js/smoothscroll/jquery.smooth-scroll.min.js"></script>
+
+    <!-- Flexslider -->
+    <script src="/media/js/jquery.flexslider.js"></script>
+    
+    <!-- Waypoint -->
+    <script src="/media/js/waypoint/jquery.waypoints.min.js"></script>
+
+    <!-- Countdown -->
+    <script src="/media/js/countdown/jquery.countdown.min.js"></script>
+    
+    <!-- Owl Carousel -->
+    <script src="/media/js/owl-carousel/owl.carousel.min.js"></script>
+
+    <!-- Custom Script -->
+    <script src="/media/js/script.js"></script>
+    
+    <!-- Main slider Script -->
+    <script src="/media/js/slider.js"></script>
+
 </body>
 </html>

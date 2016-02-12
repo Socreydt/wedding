@@ -256,7 +256,7 @@ img.with-border { border: 1px solid #6a6a6a; }
 /*===============================================*/
 #nav-header { z-index: 1000; }
 
-#nav-bar { position: relative; height: 145px; width: 100%; z-index: 1000; }
+#nav-bar { position: relative; height: 100px; width: 100%; z-index: 1000; }
 
     /* ----------------------------------------------*/
     /* 02.1 Width & Color 							 */
@@ -274,7 +274,7 @@ img.with-border { border: 1px solid #6a6a6a; }
     /* ----------------------------------------------*/
     #nav-bar.top-bar { position: absolute; /*background-color:transparent;*/ margin: auto; left: 0; right: 0; }
 
-        #nav-bar.top-bar.stick-it { position: fixed; height: 145px; width: 100%; background-color: #FFF; z-index: 1500; /*-webkit-transform: translateZ(0);*/ }
+        #nav-bar.top-bar.stick-it { position: fixed; height: 100px; width: 100%; background-color: #FFF; z-index: 1500; /*-webkit-transform: translateZ(0);*/ }
 
     /* 02.1.4 Bottom Bar 							 */
     /* ----------------------------------------------*/
@@ -340,19 +340,11 @@ img.with-border { border: 1px solid #6a6a6a; }
 
 /* 03.1.1 Transparent 							 */
 /* ----------------------------------------------*/
-.transparent #nav-menu > li a { color: #FFF; }
+.transparent .nav-flex-item { color: #FFF; }
 
-    .transparent #nav-menu > li a:hover { color: #f0394d; }
+.transparent.stick-it .nav-flex-item { color: #666; }
 
-.transparent.stick-it #nav-menu > li a { color: #666; }
-
-/* 03.1.2 Additional Class For Nav Center 		 */
-/* ----------------------------------------------*/
-.first-child-margin { margin-left: 20px; }
-
-.last-child-margin { margin-right: 0px; }
-
-.split-margin { margin-left: 80px; }
+    .transparent.stick-it .nav-flex-item:hover { color: #f0394d; }
 
 /* ----------------------------------------------*/
 /* 03.2 Child Menu								 */
@@ -1513,12 +1505,17 @@ h2#dont-miss-it-title { font-size: 42px; margin-bottom: 30px; font-family: 'Paci
 /* -------------------------------------------*/
 /* 15.1 Owl Carousel 						  */
 /* -------------------------------------------*/
-.owl-carousel .item { padding: 0 15px; }
+/*.owl-carousel .item { padding: 0 15px; }*/
 
 .owl-theme .owl-controls .owl-page span { display: block; width: 8px; height: 8px; margin: 5px 7px; opacity: 1; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; background: #333333; }
 
 .owl-theme .owl-controls .owl-page.active span,
 .owl-theme .owl-controls.clickable .owl-page:hover span { background: #f0394d; }
+.owl-theme .owl-controls { position: absolute; width: 100%; }
+    .owl-theme .owl-controls .owl-pagination { display: flex; justify-content: center; }
+
+.owl-hotel img{width:100%;height:300px;}
+.hotel-map img{width:100%;height:300px;}
 
 /* -------------------------------------------*/
 /* 15.2 MAGNIFIC POPUP 						  */
@@ -1616,9 +1613,6 @@ a:hover .navbar-setting-button,
 
     #nav-bar.top-bar.stick-it { height: 100px; }
 
-    #nav-bar.bottom-bar.stick-it { height: 100px; }
-
-    #nav-bar.bottom-bar.outside { bottom: -100px; }
 
     /* ----------------------------------------------*/
     /* 02.1 Width & Color (Nav Bar)			 		 */
