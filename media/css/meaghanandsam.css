@@ -232,7 +232,7 @@ h6, .h6 { font-size: 12px; }
     h1.inline, h2.inline, h3.inline,
     h4.inline, h5.inline, h6.inline { display: inline; vertical-align: middle; }
 
-p { font-family: 'Arvo', serif; font-size: 15px; line-height: 26px; margin-bottom: 25px; }
+p { font-family: 'Arvo', serif; font-size: 16px; line-height: 26px; margin-bottom: 25px; }
 
     p.lead { font-size: 19px; line-height: 28px; font-weight: normal; }
 
@@ -274,7 +274,15 @@ img.with-border { border: 1px solid #6a6a6a; }
     /* ----------------------------------------------*/
     #nav-bar.top-bar { position: absolute; /*background-color:transparent;*/ margin: auto; left: 0; right: 0; }
 
-        #nav-bar.top-bar.stick-it { position: fixed; height: 100px; width: 100%; background-color: #FFF; z-index: 1500; /*-webkit-transform: translateZ(0);*/ }
+        #nav-bar.top-bar.stick-it {
+            position: fixed;
+            height: 100px;
+            width: 100%;
+            background-color: #FFF;
+            z-index: 1500; /*-webkit-transform: translateZ(0);*/
+            -webkit-box-shadow: 0 1px 8px rgba(0,0,0,.3);
+            box-shadow: 0 1px 8px rgba(0,0,0,.3);
+        }
 
     /* 02.1.4 Bottom Bar 							 */
     /* ----------------------------------------------*/
@@ -282,7 +290,16 @@ img.with-border { border: 1px solid #6a6a6a; }
 
     #nav-bar.bottom-bar.outside { position: absolute; /*background-color:transparent;*/ bottom: -145px; }
 
-    #nav-bar.bottom-bar.stick-it { position: fixed; height: 145px; width: 100%; background-color: #FFF; z-index: 1500; top: 0; bottom: auto; /*-webkit-transform: translateZ(0)*/ }
+    #nav-bar.bottom-bar.stick-it {
+        position: fixed;
+        height: 145px;
+        width: 100%;
+        background-color: #FFF;
+        z-index: 1500;
+        top: 0;
+        bottom: auto; /*-webkit-transform: translateZ(0)*/
+        
+    }
 
     /* 02.1.5 Transparent & Block Color 			 */
     /* ----------------------------------------------*/
@@ -1514,6 +1531,7 @@ h2#dont-miss-it-title { font-size: 42px; margin-bottom: 30px; font-family: 'Paci
 .owl-theme .owl-controls { position: absolute; width: 100%; }
     .owl-theme .owl-controls .owl-pagination { display: flex; justify-content: center; }
 
+
 .owl-hotel img{width:100%;height:300px;}
 .hotel-map img{width:100%;height:300px;}
 
@@ -1611,7 +1629,8 @@ a:hover .navbar-setting-button,
 
     #nav-bar-sticky-wrapper { height: 100px !important; }
 
-    #nav-bar.top-bar.stick-it { height: 100px; }
+    #nav-bar.top-bar.stick-it { height: 100px; -webkit-box-shadow: 0 1px 8px rgba(0,0,0,.3);
+            box-shadow: 0 1px 8px rgba(0,0,0,.3);  }
 
 
     /* ----------------------------------------------*/

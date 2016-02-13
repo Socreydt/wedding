@@ -183,8 +183,27 @@ $(document).ready(function () {
         $('#preloader').hide();
     });
     Pace.on('hide', function () {
+        // 04.1 Gallery - Masonry
+        //------------------------------------------------------------------------------
+        var $gallery = $('#masonry-gallery');
 
-        // 04.1 Waypoint Animate CSS
+        if (device.tablet() || device.mobile()) {
+            $gallery.masonry({
+                columnWidth: ".col-md-6",
+                itemSelector: ".hotel-wrapper",
+                transitionDuration: 0,
+            });
+        }
+        else {
+            $gallery.masonry({
+                columnWidth: ".hotel-wrapper",
+                itemSelector: ".hotel-wrapper",
+                transitionDuration: "1s",
+                percentPosition: true
+            });
+        }
+
+        // 04.2 Waypoint Animate CSS
         //------------------------------------------------------------------------------
         if (!device.tablet() && !device.mobile() && !isIE9()) {
             $('.animation').each(function () {
@@ -201,7 +220,7 @@ $(document).ready(function () {
         };
 
 
-        // 04.2 Nav Header Position (Mobile)
+        // 04.3 Nav Header Position (Mobile)
         //------------------------------------------------------------------------------
         if (device.tablet() || device.mobile()) {
             if ($("#nav-bar").hasClass("sticky-nav")) {
@@ -209,7 +228,7 @@ $(document).ready(function () {
             }
         }
 
-        // 04.3 Waypoint Sticky Navbar
+        // 04.4 Waypoint Sticky Navbar
         //------------------------------------------------------------------------------		
         if ($("#nav-bar").hasClass("sticky-nav")) {
 
@@ -251,14 +270,15 @@ $(document).ready(function () {
 
     // 07. COUNTDOWN
     //===================================================================================
-    $('#countdown').countdown("2016/05/26 18:30:00").on('update.countdown', function (event) {
+    $('#countdown').countdown("06/26/2016 18:30:00").on('update.countdown', function (event) {
+        
         var html = '<span class="countdown_row">';
         var need_seconds = false;
         if (event.offset.months > 0) {
             html += '<span class="countdown_section"><span class="countdown_amount">' + '%-m' + '</span><br>Months</span>';
         }
         if (event.offset.days > 0) {
-            html += '<span class="countdown_section"><span class="countdown_amount">' + '%-d' + '</span><br>Days</span>';
+            html += '<span class="countdown_section"><span class="countdown_amount">' + '%-n' + '</span><br>Days</span>';
         }
         if (event.offset.hours > 0) {
             html += '<span class="countdown_section"><span class="countdown_amount">' + '%-H' + '</span><br>Hours</span>';

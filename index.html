@@ -80,17 +80,95 @@
         span.countdown_amount { font-size: 80px; color: #FFFFFF; font-weight: 700; letter-spacing: -0.5px; font-family: 'Open Sans', sans-serif;}
         
         /* hotels */
-        .hotel-column{}
+        .hotel-wrapper {
+            width:50%;    
+            margin-bottom:40px;
+                padding-right: 15px;
+    padding-left: 15px;
+        }
+        .hotel-container{    -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);}
+            .hotel-container:hover {
+                -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
         .hotel-name { margin-top: 0; margin-bottom: 5px; font-size: 20px; font-family: 'Oswald', sans-serif; color: #333333; text-decoration:none; }
         .hotel-price { font-weight: 300; font-family: 'Oswald', sans-serif; }
-        .hotel-location { display: block; margin-bottom: 10px; }
+        .hotel-location { display: block; margin-bottom: 10px;color: #f0394d; }
             .hotel-location:hover, .hotel-name:hover { color: #f0394d; text-decoration:underline; }
-        .hotel-body { background-color: #FFF; padding: 30px 30px 30px 30px; }
-            .hotel-body .de-button { margin-top: 0; }
-        .hotel-footer { background-color: #FFF; border-top:1px solid #f6f6f6; padding: 30px 30px; }
+        .hotel-body { background-color: #FFF; padding: 40px 30px 30px 30px; }
+            .hotel-body .de-button { margin-top: 15px; margin-right:10px; }
+            .hotel-body p.nomargin{margin:0;}
+        .hotel-footer { background-color: #f6f6f6; padding: 30px 30px; }
         .hotel-book-label { font-weight: bold; text-transform: uppercase; font-family: 'Oswald', sans-serif;margin-bottom:8px; }
+        .hotel-container:hover .hotel-footer { background-color: #f6f6f6;
 
+        }
+        .party-box-content-wrapper {
+            -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
+            box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
+            margin-bottom:40px;
+            
+        }
+        .party-box-content-wrapper:hover{
+            -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .party-box-header {
+            padding: 30px;
+            text-transform:uppercase;
+            font-family: 'Oswald', sans-serif;
+            color:#333;
+            background-color:#FFF;
+            border-bottom:1px solid #ECECEC;
+        }
+        .party-box-body{
+            background-color: #FFF;
+            padding: 10px 30px;
+        }
+        .party-box-address{
+            color: #f0394d;
+            margin-bottom:10px;
+            display:block;
+        }
+        .party-box-address:hover{
+            color: #f0394d;
+            text-decoration:underline;
+        }
+        .party-box-images {
+
+        }
+
+        .travel-block{
+            background-color: #f6f6f6;
+            -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
+            box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
+        }
+        .travel-block:hover{
+            -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .travel-block-header {
+            padding:20px 30px 0 30px;
+        }
+        .travel-block-body{
+            padding: 20px 30px 0 30px;
+        }
+        .travel-block-footer {
+            padding:0 30px 20px 30px;
+        }
+
+        .travel-block-header h3{
+            text-transform:uppercase;
+        }
+
+        @media screen and (max-width: 992px) {
+            .hotel-wrapper {
+                width: 100%;
+            }
+        }
         @media screen and (max-width: 680px) {
+            
             .countdown_row { height: 70px; }
             .countdown_section { background: url(/media/img/countdown_frame_small.png) no-repeat center; font-size: 22px; width: 50px; height: 70px; padding: 10px 0 0 0; margin: 0 5px; }
             span.countdown_amount { font-size: 22px; }
@@ -183,6 +261,68 @@
     <!-- END OF MAIN SLIDER -->
     <!-- CONTENT SECTION-->
     <section id="content">
+        <section id="party" style="padding: 85px 0;position: relative;">
+            <div class="container">
+                <div class="row animation fadeIn">
+                    <div class="col-md-offset-2 col-md-8">
+                        <div class="page-title animation text-center fadeInUp">
+                            <h1 style="text-transform:uppercase;">Let's Celebrate</h1>
+                            <div class="heart-divider">
+                                <span class="grey-line"></span>
+                                <i class="de-icon-heart pink-heart"></i>
+                                <i class="de-icon-heart grey-heart"></i>
+                                <span class="grey-line"></span>
+                            </div>
+                            <p>It means the world to us that you are traveling from near and far to join us for this awesome day of dancing, food, drink and merriment!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="party-box-content-wrapper animation fadeInLeft">
+                            <div class="party-box-header">
+                                Saturday, June 25th, 2016 at 8:30 pm
+                            </div>
+                            <div class="party-box-body" style="padding-bottom:39px;">
+                                <h3 style="margin-bottom:5px; text-transform:uppercase;">THE after rehersal dinner party</h3>
+                                <a href="https://goo.gl/maps/k9N4TT5LmSJ2" class="party-box-address" target="_blank">Druthers Brewering Company, 381 Broadway, Saratoga Springs, NY 12866</a>
+                                <p>
+                                    After the rehearsal dinner we plan to meet people in downtown Saratoga at Druthers Brewering Company. While there isn’t an exact time, we expect to arrive around 8:30 pm and look forward to seeing you there! 
+                                </p>
+                            </div>
+                            <div class="party-box-images">
+                                <div class="owl-carousel owl-theme owl-hotel">
+                                    <div class="item"><img data-src="/media/img/druthers/firepit.jpg" class="lazyOwl fullwidth" alt="Druthers Brewering Company, Saratoga Springs, NY"></div>
+                                    <div class="item"><img data-src="/media/img/druthers/beer.jpg" class="lazyOwl fullwidth" alt="Druthers Brewering Company, Saratoga Springs, NY"></div>
+                                    <div class="item"><img data-src="/media/img/druthers/food.jpg" class="lazyOwl fullwidth" alt="Druthers Brewering Company, Saratoga Springs, NY"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="party-box-content-wrapper animation fadeInRight">
+                            <div class="party-box-header" style="color:#f0394d;">
+                                Sunday, June 26th, 2016 at 5:30 pm
+                            </div>
+                            <div class="party-box-body">
+                                <h3 style="margin-bottom:5px;text-transform:uppercase;">The ceremony and reception</h3>
+                                <a href="https://goo.gl/maps/mhvRVoPv3ZN2" class="party-box-address" target="_blank">Canfield Casino, 1 East Congress Street, Saratoga Springs, NY</a>
+                                <p>Cocktails, dinner and dancing to follow the short ceremony.<br /><b>Dress code: Black Tie (optional)</b></p>
+                                <p>Parking for approximately 60 cars is available on East Congress Street in front of the Casino. The road will be blocked and reserved for our wedding guests only.</p>
+                            </div>
+                            <div class="party-box-images">
+                                <div class="owl-carousel owl-theme owl-hotel">
+                                    <div class="item"><img data-src="/media/img/casino/outside.jpg" class="lazyOwl fullwidth" alt="Canfield Casino, Saratoga Springs, NY"></div>
+                                    <div class="item"><img data-src="/media/img/casino/ceiling.jpg" class="lazyOwl fullwidth" alt="Canfield Casino Ceiling, Saratoga Springs, NY"></div>
+                                    <div class="item"><img data-src="/media/img/casino/inside.jpg" class="lazyOwl fullwidth" alt="Canfield Casino Inside, Saratoga Springs, NY"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
         <section id="location-countdown">
             <div class="image-divider auto-height" style="background-image: url(/media/img/canfield.jpg); background-attachment: fixed; background-position: 50% 50%">
                 <div class="divider-overlay"></div>
@@ -233,6 +373,161 @@
 
             </div>
         </section>
+        <section id="travel" style="padding: 85px 0;position:relative;background-color:#FFF;">
+            <div class="icon-title">
+                <div class="de-icon circle light large-size aligncenter" style="background-color:#FFF;">
+                    <i class="de-icon-plane"></i>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row animation fadeIn">
+                    <div class="col-md-offset-2 col-md-8">
+                        <div class="page-title animation text-center fadeInUp">
+                            <h1 style="text-transform:uppercase;">Travel</h1>
+                            <div class="heart-divider">
+                                <span class="grey-line"></span>
+                                <i class="de-icon-heart pink-heart"></i>
+                                <i class="de-icon-heart grey-heart"></i>
+                                <span class="grey-line"></span>
+                            </div>
+                            <p>It means the world to us that you are traveling from near and far to join us!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="travel-block">
+                            <div class="travel-block-header">
+                                <h3 style="margin-bottom: 0;">Rental Cars</h3>
+                            </div>
+                            <div class="travel-block-body">
+                                <p style="margin-bottom:0;">There are lots of rental car options throughout the area. <b style="color:#f0394d;">We have reserved a group rate through Budget.</b> The discount can be used between June 18 and July 3rd. You will receive up to 30% off the rental rate, depending on the days you book.</p>
+                            </div>
+                            <div class="travel-block-footer">
+                                <a class="de-button small" href="http://www.budgetcarrental.com/budget/meetings/go.html?BCD=U001943&NAME=Dooley-Creydt+Wedding-06/16&FDATE=06242016&TDATE=06272016&LOCATION2=Albany,+NY&LOCATION1=Saratoga+Springs,+NY&EVENT=0&IN=&AA=0%C2%A0%22" target="_blank"><i class="de-icon-link-ext"></i> Book now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="travel-block">
+                            <div class="travel-block-header">
+                                <h3  style="margin-bottom: 0;">Taxis</h3>
+                            </div>
+                            <div class="travel-block-body">
+                                <p>The wedding will be held within walking distance of all of the hotels. If you would prefer to not rent a car, here are a few taxi options.</p>
+
+                                
+                                
+                                
+                                
+
+                                Saratoga Taxi
+                                (518) 584-2700
+                                http://www.saratoga-taxi.com/
+                                Pick-up from the airport by appointment. $65 to downtown Saratoga Springs.
+
+                                Chet’s Airport and Taxi Service
+                                (518) 423-5753
+                                http://chetsairportservice.com/
+                                Pick up from the airport by appointment. $50 one way/ $80 round trip
+
+                                Value Van Taxi & Car Service
+                                (518) 479-9394
+                                http://www.valuevantaxi.com/default.html
+                                Pick up from the airport by appointment. Request a ride 1 week in advance, please. $49 each way and $3 per additional person.
+
+                            </div>
+                            <div class="travel-block-footer">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-md-offset-1 col-md-10">
+                        <div class="row animation fadeIn animated" style="visibility: visible;">
+                            <div class="col-md-4 ">
+                                <div class="interest-icon">
+                                    <div class="de-icon circle small-size" style="background-color:#67a80e">
+                                        <i class="de-icon-food"></i>
+                                    </div>
+                                </div>
+                                <div class="interest-blurb">
+                                    <a href="http://www.capitalandtaxi.com/index.htm" target="_blank">Capitaland Taxi</a>
+                                    <p>This is the taxi company of the airport (Albany), and the taxis available at the stand without a reservation. Price is based on the meter fare of $2 per mile (approximately 30 miles to Saratoga Springs).</p>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="interest-icon">
+                                    <div class="de-icon circle small-size" style="background-color:#67a80e">
+                                        <i class="de-icon-food"></i>
+                                    </div>
+                                </div>
+                                <div class="interest-blurb">
+                                    <span><strong>Delicious Cafe</strong></span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices malesuada </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="interest-icon">
+                                    <div class="de-icon circle small-size" style="background-color:#c89d1b">
+                                        <i class="de-icon-coffee"></i>
+                                    </div>
+                                </div>
+                                <div class="interest-blurb">
+                                    <span><strong>Coffee Shop</strong></span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices malesuada </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- INTEREST AROUND ROW-2 -->
+                        <div class="row animation fadeIn animated" style="visibility: visible;">
+
+                            <div class="col-md-4">
+                                <div class="interest-icon">
+                                    <div class="de-icon circle small-size" style="background-color:#f0394d">
+                                        <i class="de-icon-basket"></i>
+                                    </div>
+                                </div>
+                                <div class="interest-blurb">
+                                    <span><strong>Shopping Market</strong></span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices malesuada </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="interest-icon">
+                                    <div class="de-icon circle small-size" style="background-color:#f6700e">
+                                        <i class="de-icon-paper-plane"></i>
+                                    </div>
+                                </div>
+                                <div class="interest-blurb">
+                                    <span><strong>Kid Toys Station</strong></span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices malesuada </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="interest-icon">
+                                    <div class="de-icon circle small-size" style="background-color:#0d9a48">
+                                        <i class="de-icon-tree"></i>
+                                    </div>
+                                </div>
+                                <div class="interest-blurb">
+                                    <span><strong>Green Park</strong></span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices malesuada </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="accomodation">
             <div class="icon-title">
                 <div class="de-icon circle light large-size aligncenter" style="background-color:#f6f6f6">
@@ -245,44 +540,135 @@
                         <div class="page-title animation text-center fadeInUp">
                             <h1 style="text-transform:uppercase;">Accomodations</h1>
                             <div class="heart-divider">
-                                <span class="white-line"></span>
+                                <span class="grey-line"></span>
                                 <i class="de-icon-heart pink-heart"></i>
-                                <i class="de-icon-heart white-heart"></i>
-                                <span class="white-line"></span>
+                                <i class="de-icon-heart grey-heart"></i>
+                                <span class="grey-line"></span>
                             </div>
                             <p>
-                                We've done our best to get very best rooms at a discount! We have worked out a block of rooms from the following hotels below. If you are interested in speciality hotels, keep on scrolling down.
+                                We've done our best to get very best rooms at a discount! <b style="color:#f0394d;">All hotel room blocks will be available until approximately 6 weeks before the wedding.</b> Please book your rooms as soon as possible as there are many events in Saratoga the same weekend. If you are interested in speciality hotels, keep on scrolling down.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="row animation fadeInUp">
-                    <div class="col-md-6 hotel-column" style="padding-bottom:60px;">
-                        <div class="owl-carousel owl-theme owl-hotel">
-                            <div class="item"><img data-src="/media/img/pavilion-grand-hotel/pavilion-grand-hotel-a.jpg" class="lazyOwl fullwidth" alt="Pavilion Grand Hotel, Saratoga Springs, NY"></div>
-                            <div class="item"><img data-src="/media/img/pavilion-grand-hotel/terrace.jpg" class="lazyOwl fullwidth" alt="Pavilion Grand Hotel, Saratoga Springs, NY"></div>
-                        </div>
-                        <div class="hotel-body">
-                            <a class="hotel-name" href="http://www.paviliongrandhotel.com/" target="_blank">Pavilion Grand Hotel <span class="label label-default pull-right hotel-price">$160</span></a>
-                            <a class="hotel-location" href="https://goo.gl/maps/CFZ7cWAMbnE2" target="_blank">30 Lake Avenue, Saratoga Springs, NY 12866</a>
-                            <p>A luxury boutique hotel with all suite-style rooms located in the heart of Saratoga Springs, just one block off Broadway. Suites ranging from 660 - 2300 square feet include full kitchens and some include outdoor patios!</p>
-                            <p>Rooms available in the block on Saturday (6/25) and Sunday (6/26) nights.</p>
-                            <a href="https://goo.gl/maps/CFZ7cWAMbnE2" class="de-button small" target="_blank"><i class="de-icon-location"></i>View Map</a>
-                            <a href="https://goo.gl/maps/qhUrcTwDpwq" class="de-button small" target="_blank"><svg style="width:16px;height:16px;position: relative;top: 2px;" viewBox="0 0 24 24"><path fill="#6a6a6a" d="M14.12,10H19V8.2H15.38L13.38,4.87C13.08,4.37 12.54,4.03 11.92,4.03C11.74,4.03 11.58,4.06 11.42,4.11L6,5.8V11H7.8V7.33L9.91,6.67L6,22H7.8L10.67,13.89L13,17V22H14.8V15.59L12.31,11.05L13.04,8.18M14,3.8C15,3.8 15.8,3 15.8,2C15.8,1 15,0.2 14,0.2C13,0.2 12.2,1 12.2,2C12.2,3 13,3.8 14,3.8Z" /></svg> 9 min walk to party!</a>
-                        </div>
-                        <div class="hotel-footer">
-                            <div class="hotel-book-label">To Book</div>
-                            <a href="tel:518-583-2727" class="de-button small" style="margin-top:0;"><i class="de-icon-phone"></i>Call (518) 583-2727</a> code "<span style="color:#f0394d;">Dooley/Creydt Wedding</span>"
+                <div class="row" id="masonry-gallery">
+                    <div class="hotel-wrapper animation fadeInLeft">
+                        <div class="hotel-container">
+                            <div class="owl-carousel owl-theme owl-hotel">
+                                <div class="item"><img data-src="/media/img/pavilion-grand-hotel/pavilion-grand-hotel-a.jpg" class="lazyOwl fullwidth" alt="Pavilion Grand Hotel, Saratoga Springs, NY"></div>
+                                <div class="item"><img data-src="/media/img/pavilion-grand-hotel/one-bedroom.jpg" class="lazyOwl fullwidth" alt="Pavilion Grand Hotel, Saratoga Springs, NY"></div>
+                                <div class="item"><img data-src="/media/img/pavilion-grand-hotel/hotel.jpg" class="lazyOwl fullwidth" alt="Pavilion Grand Hotel, Saratoga Springs, NY"></div>
+                                <div class="item"><img data-src="/media/img/pavilion-grand-hotel/terrace.jpg" class="lazyOwl fullwidth" alt="Pavilion Grand Hotel, Saratoga Springs, NY"></div>
+                                <div class="item"><img data-src="/media/img/pavilion-grand-hotel/bathroom.jpg" class="lazyOwl fullwidth" alt="Pavilion Grand Hotel, Saratoga Springs, NY"></div>
+                                <div class="item"><img data-src="/media/img/pavilion-grand-hotel/kitchen.jpg" class="lazyOwl fullwidth" alt="Pavilion Grand Hotel, Saratoga Springs, NY"></div>
+                                <div class="item"><img data-src="/media/img/pavilion-grand-hotel/living.jpg" class="lazyOwl fullwidth" alt="Pavilion Grand Hotel, Saratoga Springs, NY"></div>
+                            </div>
+                            <div class="hotel-body">
+                                <a class="hotel-name" href="http://www.paviliongrandhotel.com/" target="_blank">Pavilion Grand Hotel <span class="label label-default pull-right hotel-price">$160</span></a>
+                                <a class="hotel-location" href="https://goo.gl/maps/CFZ7cWAMbnE2" target="_blank">30 Lake Avenue, Saratoga Springs, NY 12866</a>
+                                <p>A luxury boutique hotel with all suite-style rooms located in the heart of Saratoga Springs, just one block off Broadway. Suites ranging from 660 - 2300 square feet include full kitchens and some include outdoor patios!</p>
+                                <p class="nomargin">Rooms available in the block on Saturday (6/25) and Sunday (6/26) nights.</p>
+                                <a href="https://goo.gl/maps/CFZ7cWAMbnE2" class="de-button small" target="_blank"><i class="de-icon-location"></i>Map</a>
+                                <a href="https://goo.gl/maps/qhUrcTwDpwq" class="de-button small" target="_blank"><svg style="width:16px;height:16px;position: relative;top: 2px;" viewBox="0 0 24 24"><path fill="#6a6a6a" d="M14.12,10H19V8.2H15.38L13.38,4.87C13.08,4.37 12.54,4.03 11.92,4.03C11.74,4.03 11.58,4.06 11.42,4.11L6,5.8V11H7.8V7.33L9.91,6.67L6,22H7.8L10.67,13.89L13,17V22H14.8V15.59L12.31,11.05L13.04,8.18M14,3.8C15,3.8 15.8,3 15.8,2C15.8,1 15,0.2 14,0.2C13,0.2 12.2,1 12.2,2C12.2,3 13,3.8 14,3.8Z" /></svg> 9 min walk to party!</a>
+                            </div>
+                            <div class="hotel-footer">
+                                <a href="tel:518-583-2727" class="de-button small" style="margin-top:0;"><i class="de-icon-phone"></i>Call (518) 583-2727</a> w/ code "<span style="color:#f0394d;">Dooley/Creydt Wedding</span>"
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6" style="padding-bottom:60px;">
-                        <div style="background-color:#FFF; padding:46px;">
-                            <h3 style="margin-top:0;">Embassy Suites Saratoga <span class="label label-default pull-right" style="font-weight:300;">$159 <span style="font-size:20px;"></span></span></h3>
+                    <div class="hotel-wrapper animation fadeInRight">
+                        <div class="hotel-container">
+                            <div class="owl-carousel owl-theme owl-hotel">
+                                <div class="item"><img data-src="/media/img/embassy/front.jpg" class="lazyOwl fullwidth" alt="Embassy Suites, Saratoga Springs, NY"></div>
+                                <div class="item"><img data-src="/media/img/embassy/living.jpg" class="lazyOwl fullwidth" alt="Embassy Suites, Saratoga Springs, NY"></div>
+                                <div class="item"><img data-src="/media/img/embassy/king.jpg" class="lazyOwl fullwidth" alt="Embassy Suites, Saratoga Springs, NY"></div>
+                                <div class="item"><img data-src="/media/img/embassy/bedroom.jpg" class="lazyOwl fullwidth" alt="Embassy Suites, Saratoga Springs, NY"></div>
+                                <div class="item"><img data-src="/media/img/embassy/bathroom.jpg" class="lazyOwl fullwidth" alt="Embassy Suites, Saratoga Springs, NY"></div>
+                                <div class="item"><img data-src="/media/img/embassy/pool.jpg" class="lazyOwl fullwidth" alt="Embassy Suites, Saratoga Springs, NY"></div>
+                            </div>
+                            <div class="hotel-body">
+                                <a class="hotel-name" href="http://embassysuites.hilton.com/en/es/groups/personalized/A/ALBESES-DCB-20160626/index.jhtml?WT.mc_id=POG" target="_blank">Embassy Suites Saratoga <span class="label label-default pull-right hotel-price">$160</span></a>
+                                <a class="hotel-location" href="https://goo.gl/maps/pLQRuJJRYaA2" target="_blank">86 Congress Street, Saratoga Springs, NY 12866</a>
+                                <p>An all-suite hotel within walking distance of Broadway. The hotel offers free made-to-order breakfast, indoor swimming pool and a complimentary evening reception with drinks and snacks.</p>
+                                <p class="nomargin">Rooms available in the block on Sunday night, while rooms outside of the block are available for the remainder of the weekend.</p>
+                                <a href="tel:518-290-9090" class="de-button small"><i class="de-icon-phone"></i>(518) 290-9090</a>
+                                <a href="https://goo.gl/maps/pLQRuJJRYaA2" class="de-button small" target="_blank"><i class="de-icon-location"></i>Map</a>
+                                <a href="https://goo.gl/maps/2giUqD9FX6A2" class="de-button small" target="_blank"><svg style="width:16px;height:16px;position: relative;top: 2px;" viewBox="0 0 24 24"><path fill="#6a6a6a" d="M14.12,10H19V8.2H15.38L13.38,4.87C13.08,4.37 12.54,4.03 11.92,4.03C11.74,4.03 11.58,4.06 11.42,4.11L6,5.8V11H7.8V7.33L9.91,6.67L6,22H7.8L10.67,13.89L13,17V22H14.8V15.59L12.31,11.05L13.04,8.18M14,3.8C15,3.8 15.8,3 15.8,2C15.8,1 15,0.2 14,0.2C13,0.2 12.2,1 12.2,2C12.2,3 13,3.8 14,3.8Z" /></svg> 6 min walk to party!</a>
+                            </div>
+                            <div class="hotel-footer">
+                                <a href="http://embassysuites.hilton.com/en/es/groups/personalized/A/ALBESES-DCB-20160626/index.jhtml?WT.mc_id=POG" target="_blank" class="de-button small" style="margin-top:0;"><i class="de-icon-link-ext"></i> BOOK NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hotel-wrapper animation fadeInLeft">
+                        <div class="hotel-container">
+                            <div class="owl-carousel owl-theme owl-hotel">
+                                <div class="item"><img data-src="/media/img/hampton/outside.jpg" class="lazyOwl fullwidth" alt="Hampton Inn Suites, Saratoga Springs, NY"></div>
+                                <div class="item"><img data-src="/media/img/hampton/bedroom.jpg" class="lazyOwl fullwidth" alt="Hampton Inn Suites, Saratoga Springs, NY"></div>
+                                <div class="item"><img data-src="/media/img/hampton/pool.jpg" class="lazyOwl fullwidth" alt="Hampton Inn Suites, Saratoga Springs, NY"></div>
+                                <div class="item"><img data-src="/media/img/hampton/bathroom.jpg" class="lazyOwl fullwidth" alt="Hampton Inn Suites, Saratoga Springs, NY"></div>
+                            </div>
+                            <div class="hotel-body">
+                                <a class="hotel-name" href="https://secure3.hilton.com/en_US/hp/reservation/book.htm?inputModule=HOTEL&ctyhocn=ALBSPHX&spec_plan=CHHDCW&arrival=20160626&departure=20160627&cid=OM,WW,HILTONLINK,EN,DirectLink&fromId=HILTONLINKDIRECT" target="_blank">Hampton Inn & Suites Saratoga <span class="label label-default pull-right hotel-price">$204</span></a>
+                                <a class="hotel-location" href="https://goo.gl/maps/K2W4aCjRQat" target="_blank">25 Lake Avenue, Saratoga Springs, NY 12866</a>
+                                <p>One block from Broadway with an indoor pool and free breakfast.</p>
+                                <p class="nomargin">Rooms available in the block on Sunday night, while rooms outside of the block are available for the remainder of the weekend.</p>
+                                <a href="tel:518-584-2100" class="de-button small"><i class="de-icon-phone"></i>(518) 584-2100</a>
+                                <a href="https://goo.gl/maps/K2W4aCjRQat" class="de-button small" target="_blank"><i class="de-icon-location"></i>Map</a>
+                                <a href="https://goo.gl/maps/hjh8MYA1mX52" class="de-button small" target="_blank"><svg style="width:16px;height:16px;position: relative;top: 2px;" viewBox="0 0 24 24"><path fill="#6a6a6a" d="M14.12,10H19V8.2H15.38L13.38,4.87C13.08,4.37 12.54,4.03 11.92,4.03C11.74,4.03 11.58,4.06 11.42,4.11L6,5.8V11H7.8V7.33L9.91,6.67L6,22H7.8L10.67,13.89L13,17V22H14.8V15.59L12.31,11.05L13.04,8.18M14,3.8C15,3.8 15.8,3 15.8,2C15.8,1 15,0.2 14,0.2C13,0.2 12.2,1 12.2,2C12.2,3 13,3.8 14,3.8Z" /></svg> 9 min walk to party!</a>
+                            </div>
+                            <div class="hotel-footer">
+                                <a href="https://secure3.hilton.com/en_US/hp/reservation/book.htm?inputModule=HOTEL&ctyhocn=ALBSPHX&spec_plan=CHHDCW&arrival=20160626&departure=20160627&cid=OM,WW,HILTONLINK,EN,DirectLink&fromId=HILTONLINKDIRECT" target="_blank" class="de-button small" style="margin-top:0;"><i class="de-icon-link-ext"></i> BOOK NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hotel-wrapper animation fadeInRight">
+                        <div class="hotel-container">
+                            <div class="owl-carousel owl-theme owl-hotel">
+                                <div class="item"><img data-src="/media/img/courtyard/front.jpg" class="lazyOwl fullwidth" alt="Courtyard Saratoga Springs, NY"></div>
+                                <div class="item"><img data-src="/media/img/courtyard/bedroom.jpg" class="lazyOwl fullwidth" alt="Courtyard Saratoga Springs, NY"></div>
+                                <div class="item"><img data-src="/media/img/courtyard/pool.jpg" class="lazyOwl fullwidth" alt="Courtyard Saratoga Springs, NY"></div>
+
+                            </div>
+                            <div class="hotel-body">
+                                <a class="hotel-name" href="http://www.marriott.com/hotels/travel/albss-courtyard-saratoga-springs/ " target="_blank">Courtyard Marriott Saratoga Springs <span class="label label-default pull-right hotel-price">$209</span></a>
+                                <a class="hotel-location" href="https://goo.gl/maps/ms3YfTaYKBu" target="_blank">11 Excelsior Ave, Saratoga Springs, New York</a>
+                                <p>Just outside the downtown area, the Courtyard offers newly renovated rooms and lobby as well as an indoor pool and a complimentary shuttle.</p>
+                                <p class="nomargin">Rooms available in the block on Sunday night, while rooms outside of the block are available for the remainder of the weekend.</p>
+                                <a href="tel:518-226-0538" class="de-button small"><i class="de-icon-phone"></i>(518) 226-0538</a>
+                                <a href="https://goo.gl/maps/ms3YfTaYKBu" class="de-button small" target="_blank"><i class="de-icon-location"></i>Map</a>
+                            </div>
+                            <div class="hotel-footer">
+                                <a href="http://www.marriott.com/hotels/travel/albss-courtyard-saratoga-springs/ " target="_blank" class="de-button small" style="margin-top:0;"><i class="de-icon-link-ext"></i> BOOK NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hotel-wrapper animation fadeInLeft">
+                        <div class="hotel-container">
+                            <div class="owl-carousel owl-theme owl-hotel">
+                                <div class="item"><img data-src="/media/img/holiday/front.jpg" class="lazyOwl fullwidth" alt="Holiday Inn, Saratoga Springs, NY"></div>
+                                <div class="item"><img data-src="/media/img/holiday/living.jpg" class="lazyOwl fullwidth" alt="Holiday Inn, Saratoga Springs, NY"></div>
+                                <div class="item"><img data-src="/media/img/holiday/two.jpg" class="lazyOwl fullwidth" alt="Holiday Inn, Saratoga Springs, NY"></div>
+                                <div class="item"><img data-src="/media/img/holiday/pool.jpg" class="lazyOwl fullwidth" alt="Holiday Inn, Saratoga Springs, NY"></div>
+                            </div>
+                            <div class="hotel-body">
+                                <a class="hotel-name" href="http://www.saratogahi.com/  " target="_blank">Holiday Inn Saratoga <span class="label label-default pull-right hotel-price">$229</span></a>
+                                <a class="hotel-location" href="https://goo.gl/maps/ApfxrQdgVFG2" target="_blank">232 Broadway, Saratoga Springs, NY 12866</a>
+                                <p>Hotel is located on Broadway, backing right up to Congress park, where the Canfield Casino is located.</p>
+                                <p class="nomargin">Rooms available in the block on Saturday and Sunday nights.</p>
+                                <a href="tel:518-584-4550" class="de-button small"><i class="de-icon-phone"></i>(518) 584-4550</a>
+                                <a href="https://goo.gl/maps/ApfxrQdgVFG2" class="de-button small" target="_blank"><i class="de-icon-location"></i>Map</a>
+                                <a href="https://goo.gl/maps/rJUdFcHAbyD2" class="de-button small" target="_blank"><svg style="width:16px;height:16px;position: relative;top: 2px;" viewBox="0 0 24 24"><path fill="#6a6a6a" d="M14.12,10H19V8.2H15.38L13.38,4.87C13.08,4.37 12.54,4.03 11.92,4.03C11.74,4.03 11.58,4.06 11.42,4.11L6,5.8V11H7.8V7.33L9.91,6.67L6,22H7.8L10.67,13.89L13,17V22H14.8V15.59L12.31,11.05L13.04,8.18M14,3.8C15,3.8 15.8,3 15.8,2C15.8,1 15,0.2 14,0.2C13,0.2 12.2,1 12.2,2C12.2,3 13,3.8 14,3.8Z" /></svg> 5 min walk to party!</a>
+                            </div>
+                            <div class="hotel-footer">
+                                <a href="http://ichotelsgroup.com/redirect?path=rates&brandCode=HI&GPC=DCR&hotelCode=SGANY&_PMID=99801505" target="_blank" class="de-button small" style="margin-top:0;"><i class="de-icon-link-ext"></i> BOOK NOW</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        
         <section id="gift-section">
             <div class="container">
                 <div class="row">
@@ -373,41 +759,42 @@
         </div>
     </footer>
     <!-- END OF FOOTER -->
-    
-    
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    
+
     <!-- Pace -->
     <script src="/media/js/pace/pace.min.js"></script>
 
     <!-- Bootstrap -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
-    
+
     <!-- Modernizr -->
     <script src="/media/js/modernizr/modernizr.js"></script>
 
     <!-- Device JS -->
-    <script src="/media/js/devicejs/device.js"></script>  
+    <script src="/media/js/devicejs/device.js"></script>
 
     <!-- SmoothScroll -->
     <script src="/media/js/smoothscroll/jquery.smooth-scroll.min.js"></script>
 
     <!-- Flexslider -->
     <script src="/media/js/jquery.flexslider.js"></script>
-    
+
     <!-- Waypoint -->
     <script src="/media/js/waypoint/jquery.waypoints.min.js"></script>
 
+    <!-- Masonry -->
+    <script src="/media/js/masonry/masonry.pkgd.min.js"></script>
+
     <!-- Countdown -->
     <script src="/media/js/countdown/jquery.countdown.min.js"></script>
-    
+
     <!-- Owl Carousel -->
     <script src="/media/js/owl-carousel/owl.carousel.min.js"></script>
 
     <!-- Custom Script -->
     <script src="/media/js/script.js"></script>
-    
+
     <!-- Main slider Script -->
     <script src="/media/js/slider.js"></script>
 
