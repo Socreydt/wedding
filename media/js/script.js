@@ -189,7 +189,7 @@ $(document).ready(function () {
 
         if (device.tablet() || device.mobile()) {
             $gallery.masonry({
-                columnWidth: ".col-md-6",
+                columnWidth: ".hotel-wrapper",
                 itemSelector: ".hotel-wrapper",
                 transitionDuration: 0,
             });
@@ -202,6 +202,26 @@ $(document).ready(function () {
                 percentPosition: true
             });
         }
+
+
+        var $travel = $('#travel-gallery');
+
+        if (device.tablet() || device.mobile()) {
+            $travel.masonry({
+                itemSelector: ".travel-wrapper",
+                itemSelector: ".travel-wrapper",
+                transitionDuration: 0,
+            });
+        }
+        else {
+            $travel.masonry({
+                columnWidth: ".travel-wrapper",
+                itemSelector: ".travel-wrapper",
+                transitionDuration: "1s",
+                percentPosition: true
+            });
+        }
+
 
         // 04.2 Waypoint Animate CSS
         //------------------------------------------------------------------------------
@@ -277,9 +297,9 @@ $(document).ready(function () {
         if (event.offset.months > 0) {
             html += '<span class="countdown_section"><span class="countdown_amount">' + '%-m' + '</span><br>Months</span>';
         }
-        if (event.offset.days > 0) {
-            html += '<span class="countdown_section"><span class="countdown_amount">' + '%-n' + '</span><br>Days</span>';
-        }
+        
+        html += '<span class="countdown_section"><span class="countdown_amount">' + '%-n' + '</span><br>Days</span>';
+
         if (event.offset.hours > 0) {
             html += '<span class="countdown_section"><span class="countdown_amount">' + '%-H' + '</span><br>Hours</span>';
         } else {
@@ -301,6 +321,18 @@ $(document).ready(function () {
     }).on('finish.countdown', function (event) {
 
 
+    });
+
+    // 08. MOBILE MENU
+    //==================================================================================
+    $("#mobile-nav").click(function (e) {
+        e.preventDefault()
+        $("#nav-bar-mobile").toggleClass("open");
+    });
+
+    // Hide Menu After Click It. Will be used on onepage version. 
+    $("#nav-bar-mobile a").click(function () {
+        $("#nav-bar-mobile").toggleClass("open");
     });
 
     // 10. OWL CAROUSEL

@@ -362,6 +362,8 @@ img.with-border { border: 1px solid #6a6a6a; }
 .transparent.stick-it .nav-flex-item { color: #666; }
 
     .transparent.stick-it .nav-flex-item:hover { color: #f0394d; }
+    .transparent.stick-it .nav-flex-item:active { text-decoration:none; }
+    .transparent.stick-it .nav-flex-item:link{ text-decoration:none; }
 
 /* ----------------------------------------------*/
 /* 03.2 Child Menu								 */
@@ -1461,7 +1463,8 @@ footer .image-divider.fixed-height { height: 550px; }
 
 .border-column { border-left: 1px solid #8b8b8b; border-right: 1px solid #8b8b8b; }
 
-#map-canvas { height: 560px; width: 100%; }
+#map-canvas { height: 600px; width: 100%;     -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14); margin-top:20px }
 
 /* ----------------------------------------------*/
 /* 14.5 Gallery Section							 */
@@ -1483,36 +1486,12 @@ h2#dont-miss-it-title { font-size: 42px; margin-bottom: 30px; font-family: 'Paci
 
     .circle-countdown .countdown-period { padding: 10px; display: block; text-align: center; font-size: 16px; text-transform: uppercase; }
 
-/* ----------------------------------------------*/
-/* 14.7 More Events Section						 */
-/* ----------------------------------------------*/
-#more-events { padding: 140px 0; }
-
-#events-carousel .item { padding: 20px; margin-bottom: 10px; }
-
-/* ----------------------------------------------*/
-/* 14.8 Groomsmen Section						 */
-/* ----------------------------------------------*/
-#groomsmen-section { padding: 140px 0; }
-
-.groomsmen-item { margin-bottom: 60px; }
-
-/* ----------------------------------------------*/
-/* 14.9 Bridesmaid Section						 */
-/* ----------------------------------------------*/
-#bridesmaid-section { padding: 140px 0; }
-
-.bridesmaid-item { margin-bottom: 60px; }
 
 /* ----------------------------------------------*/
 /* 14.10 Gift Section							 */
 /* ----------------------------------------------*/
-#gift-section { padding: 140px 0; background-color: #FFF; }
+#gift-section { padding: 80px 0;position:relative; }
 
-/* ----------------------------------------------*/
-/* 14.11 RSVP Section							 */
-/* ----------------------------------------------*/
-#rsvp-section { padding: 140px 0; }
 
 
 /*===============================================*/
