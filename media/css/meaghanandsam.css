@@ -590,6 +590,8 @@ img.with-border { border: 1px solid #6a6a6a; }
 
     #main-slider .slide-image { position: relative; height: inherit; width: 100%; background-size: cover; background-position: 50% 50%; background-color: #FFF; -webkit-transform: translateZ(0); }
 
+    #main-slider #main-vermont{background-position:50% 0;}
+
     /* ----------------------------------------------*/
     /* 06.4 Main Slider Slide-Video			  		 */
     /* ----------------------------------------------*/

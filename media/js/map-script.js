@@ -107,11 +107,11 @@ function initialize() {
     //INFO WINDOWS
     //=======================================================================================
     var infowindow = new google.maps.InfoWindow({
-        content: '<div>' + '<b style="font-size:14px;">The Ceremony</b><br/>Canfield Casino<br/>1 East Congress Street<br/>Saratoga Springs, NY 12866<br/><br/>June 26 2016, 5:30 pm' + '</div>'
+        content: '<div>' + '<b style="font-size:14px;">Wedding</b><br/>Canfield Casino<br/>1 East Congress Street<br/>Saratoga Springs, NY 12866<br/><br/>June 26 2016, 5:30 pm' + '</div>'
     });
 
     var comptonsWindow = new google.maps.InfoWindow({
-        content: '<div>' + '<b style="font-size:14px;">Comptons</b><br/>457 Broadway<br/>Saratoga Springs, NY 12866<br/><br/>Breakfast! Open late.' + '</div>'
+        content: '<div>' + '<b style="font-size:14px;">Compton&#39;s</b><br/>457 Broadway<br/>Saratoga Springs, NY 12866<br/><br/>Breakfast! Open late.' + '</div>'
     });
 
     var uncommon_groundsWindow = new google.maps.InfoWindow({
@@ -134,6 +134,9 @@ function initialize() {
         content: '<div>' + '<b style="font-size:14px;">Circus Cafe</b><br/>392 Broadway<br/>Saratoga Springs, NY 12866<br/>' + '<a href="http://www.circuscafe.com/" target="_blank">View menu.</a></div>'
     });
 
+    var scallionsWindow = new google.maps.InfoWindow({
+        content: '<div>' + '<b style="font-size:14px;">Scallions</b><br/>44 Lake Ave<br/>Saratoga Springs, NY 12866<br/>' + '<a href="http://www.scallionsrestaurant.com/" target="_blank">View menu.</a></div>'
+    });
 
 
     //OPEN INFO WINDOWS ON LOAD
