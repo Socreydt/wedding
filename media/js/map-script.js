@@ -90,13 +90,20 @@ function initialize() {
         position: new google.maps.LatLng(43.0825638, -73.7820769),
         draggable: false,
         raiseOnDrag: false,
-        //icon: ' ',
         map: map,
         //labelClass: "labels" // the CSS class for the label
     });
 
     var circuscafeMarker = new MarkerWithLabel({
         position: new google.maps.LatLng(43.0812902, -73.7854856),
+        draggable: false,
+        raiseOnDrag: false,
+        map: map,
+        //labelClass: "labels" // the CSS class for the label
+    });
+
+    var hotelPavillionMarker = new MarkerWithLabel({
+        position: new google.maps.LatLng(43.0825235, -73.7828395),
         draggable: false,
         raiseOnDrag: false,
         //icon: ' ',
@@ -136,6 +143,10 @@ function initialize() {
 
     var scallionsWindow = new google.maps.InfoWindow({
         content: '<div>' + '<b style="font-size:14px;">Scallions</b><br/>44 Lake Ave<br/>Saratoga Springs, NY 12866<br/>' + '<a href="http://www.scallionsrestaurant.com/" target="_blank">View menu.</a></div>'
+    });
+
+    var pavillionWindow = new google.maps.InfoWindow({
+        content: '<div>' + '<b style="font-size:14px;">Pavilion Grand Hotel</b><br/>30 Lake Ave<br/>Saratoga Springs, NY 12866<br/>' + '<a href="http://www.paviliongrandhotel.com/" target="_blank">View Hotel Website</a></div>'
     });
 
 
@@ -184,6 +195,11 @@ function initialize() {
         circusWindow.open(map, circuscafeMarker);
         map.setZoom(17);
         map.setCenter(circuscafeMarker.getPosition());
+    });
+    google.maps.event.addListener(hotelPavillionMarker, 'click', function () {
+        pavillionWindow.open(map, hotelPavillionMarker);
+        map.setZoom(17);
+        map.setCenter(hotelPavillionMarker.getPosition());
     });
 }
 
