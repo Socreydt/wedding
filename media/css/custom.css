@@ -29,6 +29,13 @@
     position: relative;
 }
 
+.map-link {
+    color:#0094ff;
+    font-weight:bold;
+    text-decoration:underline;
+    padding-top:10px;
+    display:block;
+}
 
 .nav-flex {
     padding: 10px 0;
@@ -172,14 +179,25 @@ span.countdown_amount {
     font-family: 'Oswald', sans-serif;
 }
 
+.hotel-extra{
+    position:relative;
+    display:block;margin-bottom:20px;
+    padding-bottom:20px;
+    border-bottom: 1px solid #ccc;
+}
+.hotel-extra:last-child{
+    border-bottom:none;
+}
+
 .hotel-location {
     display: block;
     margin-bottom: 10px;
-    color: #f0394d;
+    color: #0094ff;
+    
 }
 
     .hotel-location:hover, .hotel-name:hover {
-        color: #f0394d;
+        color: #0094ff;
         text-decoration: underline;
     }
 

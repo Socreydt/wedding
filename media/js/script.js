@@ -222,6 +222,23 @@ $(document).ready(function () {
             });
         }
 
+        var $party = $('#party-gallery');
+
+        if (device.tablet() || device.mobile()) {
+            $party.masonry({
+                columnWidth: ".hotel-wrapper",
+                itemSelector: ".hotel-wrapper",
+                transitionDuration: 0,
+            });
+        }
+        else {
+            $party.masonry({
+                columnWidth: ".hotel-wrapper",
+                itemSelector: ".hotel-wrapper",
+                transitionDuration: "1s",
+                percentPosition: true
+            });
+        }
 
         // 04.2 Waypoint Animate CSS
         //------------------------------------------------------------------------------
